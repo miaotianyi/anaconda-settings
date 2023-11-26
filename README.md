@@ -4,8 +4,15 @@ My personal Anaconda package installation memo
 # Anaconda itself
 Download Anaconda from official website.
 
+The download location should be `C:\ProgramData\anaconda3`
+
+Add `C:\ProgramData\anaconda3` and `C:\ProgramData\anaconda3\Scripts` to `PATH` environment variable;
+remmeber to place it above other possible versions of Python, like from `mingw`.
+
 # PyTorch
-Install from official website
+Install from official website.
+
+You can use `nvcc --version` to see the CUDA version.
 
 # Gradient-boosted decision trees
 ```
