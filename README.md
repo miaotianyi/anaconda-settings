@@ -20,3 +20,9 @@ pip install lightgbm
 pip install xgboost
 pip install catboost
 ```
+
+# PyTorch related
+```
+pip install lightning
+pip install einops
+```
