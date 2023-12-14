@@ -26,3 +26,6 @@ pip install catboost
 pip install lightning
 pip install einops
 ```
+
+# Potential OpenMP bugs
+Deleting `libiomp5md.dll` from `anaconda/Library/bin` may help resolve the issue where there are too many copies of this file.
