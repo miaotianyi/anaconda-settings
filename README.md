@@ -29,3 +29,20 @@ pip install einops
 
 # Potential OpenMP bugs
 Deleting `libiomp5md.dll` from `anaconda/Library/bin` may help resolve the issue where there are too many copies of this file.
+
+
+# Download Private Repository with GitHub Personal Access Token
+```python
+from getpass import getpass
+# use getpass for secure login
+username = getpass("Enter your GitHub username: ")
+pat = getpass("Enter your GitHub Personal Access Token (PAT): ")
+!git clone https://{username}:{pat}@github.com/miaotianyi/TabNeXt.git
+```
+
+# Launch TensorBoard
+```
+%load_ext tensorboard
+%tensorboard --logdir lightning_logs
+!ls lightning_logs
+```
